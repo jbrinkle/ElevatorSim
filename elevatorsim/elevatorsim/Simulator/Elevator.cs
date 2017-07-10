@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace elevatorsim.Simulator
 {
-    public class Elevator
+    public class Elevator : ISimulatedObject
     {
         private int _minFloor;
         private int _maxFloor;
@@ -48,5 +48,23 @@ namespace elevatorsim.Simulator
             // come back and change logic to use insert to maintain a sane ordering
             _stops.Add(floor);
         }
+
+        public void SimulateTimePassing()
+        {
+            throw new NotImplementedException();
+
+            // Simulators need to simulate time passing and keep other objects synchronized
+            // assuming SimulateTimePassing represents a unit of time...
+            // call MoveOneFloor, OpenDoors, CloseDoors as needed
+        }
+
+        private void MoveOneFloor()
+        { }
+
+        private void OpenDoors()
+        { }
+
+        private void CloseDoors()
+        { }
     }
 }
