@@ -30,5 +30,7 @@ namespace elevatorsim.Simulator
         /// </summary>
         /// <param name="elevatorId">The id of the elevator</param>
         void ReportMaintenanceNeeded(uint elevatorId);
+
+        // TODO: Report occupation and direction
     }
 }

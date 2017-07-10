@@ -10,7 +10,7 @@ namespace elevatorsim.Simulator
     {
         public uint Id { get; private set; }
 
-        public Elevator(uint id, IElevatorStatusReceiver statusReceiver)
+        public Elevator(IElevatorStatusReceiver statusReceiver, uint id, int minFloor, int maxFloor)
         {
 
         }
