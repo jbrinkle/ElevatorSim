@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Simulator\ElevatorDispatcher.cs" />
+    <Compile Include="Simulator\IElevatorLandscape.cs" />
+    <Compile Include="Simulator\IElevatorRequestReceiver.cs" />
+    <Compile Include="Simulator\IElevatorStatusReceiver.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
