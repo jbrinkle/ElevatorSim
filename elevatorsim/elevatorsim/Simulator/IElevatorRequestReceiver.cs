@@ -15,6 +15,7 @@ namespace elevatorsim.Simulator
         /// Request an elevator pickup
         /// </summary>
         /// <param name="floor">The floor where the pickup is requested</param>
-        void Request(int floor);
+        /// <param name="directionUp">The direction for the request</param>
+        void Request(int floor, bool directionUp);
     }
 }

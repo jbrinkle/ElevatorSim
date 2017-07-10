@@ -8,21 +8,18 @@ namespace elevatorsim.Simulator
 {
     public class ElevatorDispatcher : IElevatorRequestReceiver
     {
-        private IElevatorLandscape _landscape;
-        private List<Elevator> _elevators;
+        private IElevatorLocator _locator;
 
-        public ElevatorDispatcher(IElevatorLandscape landscape, List<Elevator> elevators)
+        public ElevatorDispatcher(IElevatorLocator landscape)
         {
-            _landscape = landscape;
-            _elevators = elevators;
+            _locator = landscape;
         }
 
-        public void Request(int floor)
+        public void Request(int floor, bool directionUp)
         {
             // TODO: error checking
 
-            var eid = _landscape.FindNearestElevatorToFloor(floor);
-            var elevator = _elevators.Single(e => e.Id == eid);
+            var elevator = _locator.FindNearestElevatorToFloor(floor, directionUp);
 
             elevator.AddStop(floor);
         }

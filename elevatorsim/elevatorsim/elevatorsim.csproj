@@ -55,10 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Simulator\ElevatorRecorder.cs" />
+    <Compile Include="Simulator\Elevator.cs" />
     <Compile Include="Simulator\ElevatorDispatcher.cs" />
-    <Compile Include="Simulator\IElevatorLandscape.cs" />
+    <Compile Include="Simulator\ElevatorLocator.cs" />
+    <Compile Include="Simulator\IElevatorLocator.cs" />
     <Compile Include="Simulator\IElevatorRequestReceiver.cs" />
     <Compile Include="Simulator\IElevatorStatusReceiver.cs" />
+    <Compile Include="Simulator\ISimulatedObject.cs" />
+    <Compile Include="Simulator\Simulator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
