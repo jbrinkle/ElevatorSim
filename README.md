@@ -1,4 +1,8 @@
-# code-assess
+# ElevatorSim
+
+This was written for a coding assessment for a job interview in 2017.
+
+## code-assess
 
 Hey Kuali folks,
 
